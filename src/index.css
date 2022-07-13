@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*normal desktop horizontal ( 1100px or more ) */
+  background-image: linear-gradient(
+    to right bottom,
+    #f2df72,
+    #abe387,
+    #60dfb0,
+    #00d4d7,
+    #1ec4ee,
+    #35b8e6,
+    #45acdd,
+    #51a0d2,
+    #2998bd,
+    #008fa5,
+    #00858c,
+    #087a72
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+.log {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "Caveat";
+  font-display: fallback;
+
+  src: url("../public/font/Caveat-Regular.ttf") format("truetype"),
+    url("../public/font/Caveat-Regular.woff") format("woff"),
+    url("../public/font/Caveat-SemiBold.eot") format("embedded-opentype");
+
+  font-weight: 400;
+  font-style: normal;
 }
